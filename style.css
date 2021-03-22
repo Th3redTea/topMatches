@@ -27,18 +27,47 @@ header h1{
 header ul{
     position: absolute;
     right: 20px;
+    display: inline-flex;
+    list-style: none;
 
 }
 
 header ul li{
-    display: inline;
-    margin: 15px;
+    margin: 10px;
     font-size: 30px;
-    font-weight: bold;
-
+    font-size: bolder;
 }
+
 
 header ul a{
     text-decoration: none;
     color: #000;
+}
+
+#black-home{
+    background-color: black;
+    height: 4px;
+    width: 90px;
+    position: absolute;
+    bottom: 2px;
+    left: 50px;
+}
+
+#black-about{
+    background-color: black;
+    height: 4px;
+    width: 90px;
+    position: absolute;
+    bottom: 2px;
+    left: 50px;
+    transform: translateX(120%);
+}
+
+#black-Leagues{
+    background-color: black;
+    height: 4px;
+    width: 120px;
+    position: absolute;
+    bottom: 2px;
+    right: 10px;
 }
