@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 *{
     box-sizing: border-box;
 }
@@ -16,19 +15,23 @@ body{
 header{
     color: black;
     position: relative;
+    width: 100%;
+    display: inline-flex;
+
 
 }
 
 header h1{
-    position: absolute;
-    left: 20px;
+    margin: 30px;
 }
 
 header ul{
-    position: absolute;
-    right: 20px;
     display: inline-flex;
     list-style: none;
+    position: absolute;
+    right: 20px;
+    margin: 10px;
+
 
 }
 
@@ -36,6 +39,7 @@ header ul li{
     margin: 10px;
     font-size: 30px;
     font-size: bolder;
+
 }
 
 
@@ -70,4 +74,133 @@ header ul a{
     position: absolute;
     bottom: 2px;
     right: 10px;
+}
+
+.container{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    height: 100vh;
+    margin: 100px 100px ;
+    position: relative;
+    
+}
+
+#white-ball{
+    position: absolute;
+    top: -60px;
+
+}
+
+.container h2{
+    position: absolute;
+    top: 65px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.OneMatch{
+    display: flex;
+    justify-content: center;    
+    height: 50px;
+    width: 900px;
+    background-color: #5AF9AD;
+    position: relative;
+    font-size: 25px;
+    margin: 15px;
+}
+
+.OneMatch #team1{
+    position: absolute;
+    top: -15px;
+    left: 10%;
+}
+
+.OneMatch #team2{
+    position: absolute;
+    top: -15px;
+    right: 10%;
+}
+
+.container h3{
+    position: absolute;
+    bottom: 10px;
+}
+
+/* .OneMatch #scoreCard1{
+    height: 70px;
+    width: 40px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: -10px;
+    left: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.OneMatch #scoreCard2{
+    height: 70px;
+    width: 40px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: -10px;
+    right: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.OneMatch #time{
+    height: 70px;
+    width: 60px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: -10px;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.OneMatch #team2-picture{
+    position: absolute;
+    right: -40px;
+    top: -10px;
+    width: 70px;
+}
+
+.OneMatch #team1-picture{
+    position: absolute;
+    left: -40px;
+    top: -10px;
+    width: 70px;
+}
+
+.container h3{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.container h3 a{
+    text-decoration: none;
+    color: inherit;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    margin: 20px;
 }
