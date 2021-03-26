@@ -7,7 +7,7 @@
 body{
     margin: 0;
     font-family: 'Poppins', 'sans serif';
-    background-color: #6FFC97;
+    
 
 
     
@@ -17,12 +17,14 @@ header{
     position: relative;
     width: 100%;
     display: inline-flex;
+    background-color: #6FFC97;
 
 
 }
 
 header h1{
     margin: 30px;
+    font-size: 2rem;
 }
 
 header ul{
@@ -31,15 +33,22 @@ header ul{
     position: absolute;
     right: 20px;
     margin: 10px;
+    font-size: 1.5rem;
 
 
 }
 
 header ul li{
     margin: 10px;
-    font-size: 30px;
     font-size: bolder;
+    /* border: black 2px solid; */
 
+}
+
+header ul li::before{
+    content: '';
+    height: 2px;
+    background-color: black;
 }
 
 
@@ -76,52 +85,71 @@ header ul a{
     right: 10px;
 }
 
+main{
+    background-color: #6FFC97;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+}
+
 .container{
     background-color: white;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items:center;
-    height: 100vh;
-    margin: 100px 100px ;
     position: relative;
+    height: 100vh;
+    min-width: 80%;
     
 }
 
 #white-ball{
     position: absolute;
-    top: -60px;
+    top: -10%;
+    width: 7em;
 
 }
 
+
+
 .container h2{
     position: absolute;
-    top: 65px;
-    font-size: 1.5rem;
-    font-weight: bolder;
+    top: 20px;
+    font-size: 1.3rem;
 }
 
 .OneMatch{
     display: flex;
     justify-content: center;    
     height: 50px;
-    width: 900px;
+    width: 75%;
     background-color: #5AF9AD;
     position: relative;
-    font-size: 25px;
     margin: 15px;
+    /* border: black 2px solid; */
 }
 
 .OneMatch #team1{
     position: absolute;
-    top: -15px;
+    top: 20%;
     left: 10%;
+    font-size: 1.5em;
+    width: auto ;
+    padding: 0 10px;
+    
 }
 
 .OneMatch #team2{
     position: absolute;
-    top: -15px;
+    font-size: 1.5em;
+    top: 20%;
     right: 10%;
+    width: auto ;
+    padding: 0 10px;
+    
+
 }
 
 .container h3{
@@ -156,40 +184,46 @@ header ul a{
 } */
 
 .OneMatch #time{
-    height: 70px;
-    width: 60px;
+    min-height: 100%; 
+    min-width: 50px;
     background-color: black;
     color: white;
     position: absolute;
-    top: -10px;
-    font-size: 1.3rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .OneMatch #team2-picture{
     position: absolute;
-    right: -40px;
+    right: -2.5%;
     top: -10px;
-    width: 70px;
+    width: 4em;
+    height: auto;
 }
 
 .OneMatch #team1-picture{
     position: absolute;
-    left: -40px;
+    left: -2.5%;
     top: -10px;
-    width: 70px;
+    width: 4em;
+    height: auto;
 }
 
-.container h3{
-    font-weight: bold;
-    font-size: 1.5rem;
+.container button{
+    padding: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 1em;
+    
 }
 
-.container h3 a{
+
+.container button a{
     text-decoration: none;
-    color: inherit;
+    color: white;
 }
 
 footer{
