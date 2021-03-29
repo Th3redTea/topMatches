@@ -128,6 +128,8 @@ nav ul a{
 
 }
 
+
+
 #team2{
     display: flex;
     justify-content: space-between;
@@ -144,4 +146,59 @@ footer{
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
+}
+
+
+.wrapper{
+    height: 90vh ;
+    width: 80%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.team{
+    display: flex;
+    flex-direction: column;
+}
+
+.team img{
+    height: 200px;
+    width: 60%;
+    margin: 20px auto;
+}
+
+.team-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.team-info h1{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 20px;
+    font-size: 2.5rem;
+    margin: 0 auto 15px auto;
+
+}
+
+.fixtures{
+    width: 90%;
+    background-color: white;
+    margin: 0 auto;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.players-info{
+    width: 90%;
+    background-color: white;
+    margin: 20px auto 15px auto;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+
 }
