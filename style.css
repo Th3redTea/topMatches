@@ -26,15 +26,10 @@ header{
     
 }
 
-.logo-container::after{
-    background-color: black;
-    height: 5px;
-    width: 100%;
-}
 
 .nav-links{
     width: 50%;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 nav ul{
@@ -272,6 +267,16 @@ footer{
     padding: 5px;    
 }
 
+.show{
+    background-color: white;
+    height: 80vh;
+    width: 80%;
+    margin: 0 auto;
+    transition: height 0.7s ease-in-out;
+    
+}
+
+
 .league-name{
     height: 10vh;
     background-color: white;
@@ -329,8 +334,7 @@ footer{
 }
 
 .league-mt{
-    background-color: white ;
-    display: flex;
+    background-color: var(--primary-color) ;
     justify-content: space-between;
     width: 70%;
     height: 8vh;
@@ -339,10 +343,10 @@ footer{
     font-weight: bold;
     position: relative;
     border-radius: 50px;
-    transform: translateY(-100%);
-    display: none;
+    display: flex;
+    opacity: 0;
+    transition: opacity 1s ease-in;
 }
-
 
 
 .league-mt #time{
@@ -410,3 +414,4 @@ footer{
     position: absolute;
     left: -15px;
 }
+
