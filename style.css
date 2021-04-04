@@ -24,20 +24,21 @@ body{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
+
 
     }
 
+
     .logo-container{
-        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 100%;
-        
+
     }
 
     .logo-container img{
-        width: 80%;
-        height: 80%;
-        
+        width: 50%;
     }
 
     .nav-links{
@@ -441,33 +442,32 @@ body{
 }
 
 /* Tablet view */
-@media only screen and (min-width:641px) {
+@media only screen and (min-width:641px) and (max-width:1023px) {
     header{
         height: 10vh;
-        width: 80%;
-        margin: 0 auto 100px auto;
+        width: 100%;
+        margin: 0 auto 80px auto;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        
+        justify-content: space-around;        
 
     }
 
     .logo-container{
-        width: 20%;
         height: 100%;
+        display: flex;
+        justify-content: center;
         
     }
 
     .logo-container img{
-        width: 80%;
-        height: 80%;
+        height: 100%;
+        width: 70%;
         
     }
 
     .nav-links{
-        width: 10%;
         height: 100%;
+
 
     }
 
@@ -479,8 +479,6 @@ body{
         font-size: 1.3rem;
         display: flex;
         list-style: none;
-        justify-content: space-around;
-        justify-items: center;
         height: 100%;
     }
 
@@ -518,19 +516,20 @@ body{
         align-items: center;
         word-wrap: break-word;
 
+
     }
 
     .ball-logo img{
         position: absolute;
-        height: 100px;
+        height: 70px;
         margin: 0 auto;
-        left: 45%;
-        top: -50px;
+        left: 43%;
+        top: -35px;
         
     }
 
     .container h2{
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin: 5px auto;
     }
 
@@ -539,10 +538,10 @@ body{
         background-color: var(--primary-color) ;
         display: flex;
         justify-content: space-between;
-        width: 70%;
-        height: 5%;
+        width: 90%;
+        height: 7%;
         margin: 20px auto;
-        font-size: 1.3rem;
+        font-size: 1rem;
         font-weight: bold;
         position: relative;
         border-radius: 50px;
@@ -870,65 +869,438 @@ body{
 
 /* Mobile view */
 
-@media  only screen and (max-width:480px){
+@media  only screen and (min-width:380px) and (max-width:640px){
     header{
         height: 10vh;
-        margin: 0 auto;
+        width: 100%;
+        margin: 0 auto 80px auto;
         display: flex;
         justify-content: space-between;
-        
+
+    }
+
+    .logo-container{
+        height: 100%;
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        border: red 3px solid;        
+
+
         
     }
-    
-    .nav-links{
-        width: 30%;
 
+    .logo-container img{
+
+        
+    }
+
+    #desktop-logo{
+        visibility: hidden;
+    }
+    
+    #mobile-logo{
+        visibility: visible;
+    }
+
+    .nav-links{
+        height: 100%;
+        width: 20%;
+        border: black 3px solid;
+        
     }
 
     .nav-links i{
-        font-size: 4rem;
-        float: right;
-    }
-
-    nav ul{
+        visibility: visible;
+        font-size: 2.5rem;
         display: flex;
-        flex-direction: column;
-        list-style: none;
-        visibility: hidden;
-    
-    }
-
-    nav ul li{
-        display: flex;
+        justify-content: center ;
         align-items: center;
+    }
+
+    .nav-links ul{
+        font-size: 1.3rem;
+        display: flex;
+        list-style: none;
+        height: 100%;
+        visibility: hidden;
     }
 
     nav ul a{
         text-decoration: none;
         color: #000;
-    
+        margin: 15px;
+
     }
 
 
-    .logo-container{
-        height: 10vh;
+    .container{
+        position: relative;
+        background-color: white;
+        height: 90vh;
+        width: 70%;
+        margin: 50px auto;
         display: flex;
-        
-
-    }
-
-    #mobile-logo{
-      visibility: hidden;
-      width: 25%;
-      float: left;
-    }
-
-    #desktop-logo{
-        visibility: visible;
-        width: 50%;
+        flex-direction: column;
+        -webkit-box-shadow: 2px -5px 21px 1px rgba(0,0,0,0.58);
+    -moz-box-shadow: 2px -5px 21px 1px rgba(0,0,0,0.58);
+    box-shadow: 2px -5px 21px 1px rgba(0,0,0,0.58);
     }
 
     .ball-logo{
-        visibility: hidden;
+        height: 10px;
+        margin: 20px auto;
+        width: 40%;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        word-wrap: break-word;
+
+
+    }
+
+    .ball-logo img{
+        position: absolute;
+        height: 70px;
+        margin: 0 auto;
+        left: 43%;
+        top: -35px;
+        
+    }
+
+    .container h2{
+        font-size: 1.5rem;
+        margin: 5px auto;
+    }
+
+
+    .matche{
+        background-color: var(--primary-color) ;
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        height: 7%;
+        margin: 20px auto;
+        font-size: 1rem;
+        font-weight: bold;
+        position: relative;
+        border-radius: 50px;
+        -webkit-box-shadow: 2px -5px 21px 1px rgba(0,0,0,0.58);
+    -moz-box-shadow: 2px -5px 21px 1px rgba(0,0,0,0.58);
+    box-shadow: 2px -5px 21px 1px rgba(0,0,0,0.58);
+        
+    }
+
+
+
+    .matche #time{
+        background-color: black;
+        color: white;
+        width: 15%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    #team1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 35%;
+
+    }
+
+
+    .matche a{
+        text-decoration: none;
+        color: black;
+        white-space: nowrap;
+        margin: 10px;
+    }
+
+
+
+    #team2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 35%;
+        flex-wrap: nowrap;
+    }
+
+    footer{
+        height: 10vh;
+        width: 100%;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.3rem;
+    }
+
+
+    .wrapper{
+        height: 150vh ;
+        width: 90%;
+        margin: 30px auto;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .team{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .team img{
+        height: 200px;
+        width: 60%;
+        margin: 20px auto;
+        
+    }
+
+    .team-info{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .team-info h1{
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        padding: 20px;
+        font-size: 2.5rem;
+        margin: 0 auto 15px auto;
+        -webkit-box-shadow: 2px -5px 21px 1px rgba(0,0,0,0.58);
+    -moz-box-shadow: 2px -5px 21px 1px rgba(0,0,0,0.58);
+    box-shadow: 2px -5px 21px 1px rgba(0,0,0,0.58);
+
+    }
+
+    .fixtures{
+        width: 90%;
+        background-color: white;
+        margin: 0 auto;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-shadow: 2px -5px 21px 1px rgba(0,0,0,0.58);
+    -moz-box-shadow: 2px -5px 21px 1px rgba(0,0,0,0.58);
+    box-shadow: 2px -5px 21px 1px rgba(0,0,0,0.58);
+    }
+
+    .fixtures h2{
+        margin: 10px auto;
+        font-size: 2rem;
+    }
+
+    .fixtures small{
+        text-align: center;
+    }
+
+    .players-info{
+        width: 90%;
+        background-color: white;
+        margin: 40px auto;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        -webkit-box-shadow: 2px -5px 21px 1px rgba(0,0,0,0.58);
+    -moz-box-shadow: 2px -5px 21px 1px rgba(0,0,0,0.58);
+    box-shadow: 2px -5px 21px 1px rgba(0,0,0,0.58);
+    }
+
+    .matche-fixture{
+        background-color: var(--primary-color) ;
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        height: 10%;
+        margin: 10px auto;
+        font-size: 1.2rem;
+        font-weight: bold;
+        position: relative;
+        border-radius: 50px;
+        
+    }
+
+    .matche-fixture #time{
+        background-color: black;
+        color: white;
+        width: 15%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .players-info h2{
+        margin: 10px auto;
+        font-size: 2rem;
+    }
+
+    .player{
+        background-color: var(--primary-color) ;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        height: 5%;
+        margin: 10px auto;
+        font-size: 1.2rem;
+        font-weight: bold;
+        position: relative;
+        border-radius: 50px;
+    }
+
+    .player span{
+        width: 10%;
+        height: 100%;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 5px;    
+    }
+
+    .league-name{
+        height: 10vh;
+        background-color: white;
+        width: 80%;
+        min-width: 50%;
+        margin: 0 auto;
+        display: flex;
+        justify-content:center;
+        position: relative;
+        align-items: center;
+        cursor: pointer;
+
+    }
+
+    .league-name img{
+        position: absolute;
+        height: 15vh;
+        left: -10px;
+    }
+
+    .league-name h2{
+        font-size: 2.5rem;
+    }
+
+    .league-matches{
+        background-color: white ;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: black 5px solid;
+        width: 60%;
+        height: 8vh;
+        margin: 40px auto;
+        font-size: 1.5rem;
+        font-weight: bold;
+        position: relative;
+        border-radius: 50px;
+
+    }
+
+    .league-matches img{
+        width: 12vh;
+        height: 12vh;
+        position: absolute;
+    }
+
+    .league-matches #team1-league{
+        
+        left: -10px;
+    }
+
+    .league-matches #team2-league{
+        position: absolute;
+        right: -10px;
+    }
+
+    .league-mt{
+        background-color: white ;
+        justify-content: space-between;
+        width: 70%;
+        height: 8vh;
+        margin: 50px auto;
+        font-size: 1.5rem;
+        font-weight: bold;
+        position: relative;
+        border-radius: 50px;
+        display: flex;
+        opacity: 0;
+        transition: opacity 1s ease-in;
+    }
+
+
+    .league-mt #time{
+        background-color: black;
+        color: white;
+        width: 8%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .league-mt #score-team1,#score-team2{
+        background-color: black;
+        color: white;
+        width: 6%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .league-mt #team1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .league-mt #team1 a{
+        position: absolute;
+        right: 15%;
+        top: 2vh;
+    }
+
+    .league-mt #team2 a{
+        position: absolute;
+        left: 15%;
+        top: 2vh;
+    }
+
+    .league-mt a{
+        text-decoration: none;
+        color: black;
+
+    }
+
+    .league-mt #team2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .league-mt #team1 img{
+        height: 150%;
+        width: 8%;
+        position: absolute;
+        right: -10px;
+    }
+
+    .league-mt #team2 img{
+        height: 150%;
+        width: 7%;
+        position: absolute;
+        left: -15px;
     }
 }
