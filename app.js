@@ -1,21 +1,23 @@
-const leagueTitle = document.getElementById('league-name')
-const leagueMatche = Array.from(document.querySelectorAll('.league-mt'))
-const league = document.querySelector('.league')
 
-function addDisplay() {
-    leagueMatche.forEach(matche => {
-        if( matche.style.opacity === "0"){
-            matche.style.opacity = "1"
-            league.classList.add('show')
-        }else if( matche.style.opacity === "1"){
-            matche.style.opacity = "0"
-            league.classList.remove('show')
-        }else{
-            matche.style.opacity = "1"
-        }
-        
-            
-    });
-}
+const barMenu = document.getElementById('bar-menu')
+const navLinks = document.getElementById('nav-links')
 
-leagueTitle.addEventListener('click', addDisplay)
+barMenu.addEventListener('click', () => {
+
+    if ( navLinks.style.width === '0%' && navLinks.style.visibility === "hidden"){
+        navLinks.style.width = '40%';
+        navLinks.style.visibility = "visible";
+    }else if (navLinks.style.width === '40%' && navLinks.style.visibility === "visible") {
+        navLinks.style.width = '0%';
+        navLinks.style.visibility = 'hidden';
+    }
+    
+     
+})
+
+const closeMenu = document.getElementById('close-menu')
+
+closeMenu.addEventListener('click', () => {
+    navLinks.style.width = '0%';
+    navLinks.style.visibility = 'hidden'
+})
