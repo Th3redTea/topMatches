@@ -53,8 +53,9 @@ html,body{
 
     .nav-links{
         height: 100%;
-        width: 40%;
-        visibility: visible;
+        width: 40% !important;
+        visibility: visible !important;
+        
 
     }
 
@@ -78,10 +79,6 @@ html,body{
 
     }
 
-
-    #mobile-logo{
-        visibility: hidden;
-    }
 
     .container{
         position: relative;
@@ -502,10 +499,6 @@ html,body{
     }
 
 
-    #mobile-logo{
-        visibility: hidden;
-    }
-
     .container{
         position: relative;
         background-color: white;
@@ -902,13 +895,10 @@ html,body{
         width: 100%;
         padding: 5px;
     }
-    
-    #mobile-logo{
-        visibility: hidden;
-    }
 
     .nav-links{
         visibility: hidden;
+        width: 0%;
         background-color: black;
         color: white;
         z-index: 10;
