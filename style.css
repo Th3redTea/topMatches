@@ -61,12 +61,13 @@ body{
     }
 
     .nav-links ul{
+        position: absolute;
+        top: 20px;
         font-size: 1.5rem;
         display: flex;
         list-style: none;
         justify-content: space-between;
         justify-items: center;
-        height: 100%;
     }
 
     nav ul a{
@@ -299,10 +300,8 @@ body{
     /* leagues page */
 
     .league-name{
-        height: 10vh;
         background-color: white;
         width: 80%;
-        min-width: 50%;
         margin: 0 auto;
         display: flex;
         justify-content:center;
@@ -318,49 +317,13 @@ body{
         left: -10px;
     }
 
-    .league-name h2{
-        font-size: 2.5rem;
-    }
-
-    .league-matches{
-        background-color: white ;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border: black 5px solid;
-        width: 60%;
-        height: 8vh;
-        margin: 40px auto;
-        font-size: 1.5rem;
-        font-weight: bold;
-        position: relative;
-        border-radius: 50px;
-
-    }
-
-    .league-matches img{
-        width: 12vh;
-        height: 12vh;
-        position: absolute;
-    }
-
-    .league-matches #team1-league{
-        
-        left: -10px;
-    }
-
-    .league-matches #team2-league{
-        position: absolute;
-        right: -10px;
-    }
 
     .league-mt{
         background-color: white ;
         justify-content: space-between;
         width: 70%;
-        height: 8vh;
-        margin: 50px auto;
-        font-size: 1.5rem;
+        height: 5vh;
+        margin: 30px auto;
         font-weight: bold;
         position: relative;
         border-radius: 50px;
@@ -391,50 +354,35 @@ body{
         justify-content: center;
     }
 
-    .league-mt #team1{
+ 
+    .league-mt #team2 a{
+        position: absolute;
+        left: 20%;
+        top: 5px;
+        text-decoration: none;
+        color: black;
+        text-align: center;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
 
     }
 
     .league-mt #team1 a{
-        position: absolute;
-        right: 15%;
-        top: 2vh;
-    }
-
-    .league-mt #team2 a{
-        position: absolute;
-        left: 15%;
-        top: 2vh;
-    }
-
-    .league-mt a{
         text-decoration: none;
         color: black;
 
     }
 
-    .league-mt #team2{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .league-mt #team1 img{
-        height: 150%;
-        width: 8%;
+  .league-mt #team1 img{
+        height: 50px;
         position: absolute;
         right: -10px;
     }
 
     .league-mt #team2 img{
-        height: 150%;
-        width: 7%;
+        height: 50px;
         position: absolute;
         left: -15px;
-    }
+    }  
 
 }
 
@@ -445,29 +393,24 @@ body{
         width: 100%;
         margin: 0 auto 80px auto;
         display: flex;
-        justify-content: space-around;        
+        justify-content: space-around;   
 
     }
 
     .logo-container{
-        height: 100%;
         display: flex;
         justify-content: center;
         
     }
 
     .logo-container img{
-        height: 100%;
-        width: 70%;
+        width: 50%;
         
     }
 
     .nav-links{
-        height: 100%;
         width: 40%;
         visibility: visible !important;
-
-
 
     }
 
@@ -484,10 +427,11 @@ body{
     }
 
     .nav-links ul{
+        position: absolute;
+        top: 35px;
         font-size: 1.3rem;
         display: flex;
         list-style: none;
-        height: 100%;
     }
 
     nav ul a{
@@ -664,7 +608,7 @@ body{
         background-color: var(--primary-color) ;
         display: flex;
         justify-content: space-between;
-        width: 95%;
+        width: 90%;
         margin: 10px auto;
         position: relative;
         border-radius: 50px;
@@ -727,7 +671,6 @@ body{
         height: 10vh;
         background-color: white;
         width: 80%;
-        min-width: 50%;
         margin: 0 auto;
         display: flex;
         justify-content:center;
@@ -743,50 +686,12 @@ body{
         left: -10px;
     }
 
-    .league-name h2{
-        font-size: 2.5rem;
-    }
-
-    .league-matches{
-        background-color: white ;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border: black 5px solid;
-        width: 60%;
-        height: 8vh;
-        margin: 40px auto;
-        font-size: 1.5rem;
-        font-weight: bold;
-        position: relative;
-        border-radius: 50px;
-
-    }
-
-    .league-matches img{
-        width: 12vh;
-        height: 12vh;
-        position: absolute;
-    }
-
-    .league-matches #team1-league{
-        
-        left: -10px;
-    }
-
-    .league-matches #team2-league{
-        position: absolute;
-        right: -10px;
-    }
-
     .league-mt{
         background-color: white ;
         justify-content: space-between;
-        width: 70%;
-        height: 8vh;
-        margin: 50px auto;
-        font-size: 1.5rem;
-        font-weight: bold;
+        height: 5vh;
+        width: 80%;
+        margin: 30px auto;
         position: relative;
         border-radius: 50px;
         display: flex;
@@ -799,7 +704,6 @@ body{
         background-color: black;
         color: white;
         width: 8%;
-        height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -810,29 +714,23 @@ body{
         background-color: black;
         color: white;
         width: 6%;
-        height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    .league-mt #team1{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
 
-    }
 
     .league-mt #team1 a{
         position: absolute;
-        right: 15%;
-        top: 2vh;
+        right: 10%;
+        top: 2px;
     }
 
     .league-mt #team2 a{
         position: absolute;
-        left: 15%;
-        top: 2vh;
+        left: 10%;
+        top: 2px;
     }
 
     .league-mt a{
@@ -848,17 +746,17 @@ body{
     }
 
     .league-mt #team1 img{
-        height: 150%;
+        height: 50px;
         width: 8%;
         position: absolute;
         right: -10px;
     }
 
     .league-mt #team2 img{
-        height: 150%;
+        height: 50px;
         width: 7%;
         position: absolute;
-        left: -15px;
+        left: -10px;
     }
 
 }
@@ -1160,8 +1058,10 @@ body{
         padding: 5px;    
     }
 
+
+    /* here starts the leagues page */
+
     .league-name{
-        height: 10vh;
         background-color: white;
         width: 80%;
         min-width: 50%;
