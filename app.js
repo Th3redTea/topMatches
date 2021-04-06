@@ -1,7 +1,8 @@
 
 const barMenu = document.getElementById('bar-menu')
 const navLinks = document.querySelector('.nav-links')
-const movileView = window.matchMedia("(max-width:640px)")
+// const movileView = window.matchMedia("(max-width:640px)")
+const closeMenu = document.getElementById('close-menu')
 
 barMenu.addEventListener('click', () => {
 
@@ -11,7 +12,7 @@ barMenu.addEventListener('click', () => {
      
 })
 
-const closeMenu = document.getElementById('close-menu')
+
 
 closeMenu.addEventListener('click', () => {
     navLinks.style.width = '0%';
