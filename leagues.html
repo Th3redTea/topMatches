@@ -7,9 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <title>Leagues</title>
-    <style>
 
-    </style>
 </head>
 <body>
     <i id="bar-menu" class="fas fa-bars"></i>
@@ -92,7 +90,35 @@
             </div>
         </div>
     </main>
-    <script src="app.js"></script>
+    <script>
+        //League fixtures of all matches code. 
+
+const leagueTitle = document.getElementById('league-name')
+const leagueMatche = Array.from(document.querySelectorAll('.league-mt'))
+const league = document.querySelector('.league')
+
+leagueTitle.addEventListener('click', () => {
+    leagueMatche.forEach(matche => matche.style.display = 'auto');
+}) 
+function addDisplay() {
+    leagueMatche.forEach(matche => {
+        if( matche.style.opacity === "0"){
+            matche.style.opacity = "1"
+            league.classList.add('show')
+        }else if( matche.style.opacity === "1"){
+            matche.style.opacity = "0"
+            league.classList.remove('show')
+        }else{
+            matche.style.opacity = "1"
+        }
+
+
+    });
+}
+
+leagueTitle.addEventListener('click', addDisplay)
+
+    </script>
 
 </body>
 </html>
