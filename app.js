@@ -37,8 +37,12 @@ async function getMatches() {
         return respn.data // return an array of objects
 }
 
+let isMobile;
+let matchMedia = window.matchMedia("(max-width:640px)");
 
-getMatches().then(data => data.forEach(match => {
+getMatches().then(data => { 
+        conatiner.innerHTML="";
+        data.forEach(match => {
         console.log(match)
         //Home team data
         const homeTeam = match.home_team;
@@ -55,7 +59,7 @@ getMatches().then(data => data.forEach(match => {
         
         const awayteamId = awayTeam.id;
 
-        if(window.matchMedia('(max-width:640px)').matches){
+        if(isMobile){
             awayteamName = awayTeam.short_code;
             hometeamName = homeTeam.short_code;
         }else{
@@ -78,7 +82,66 @@ getMatches().then(data => data.forEach(match => {
                         <span><a href="team.html">${awayteamName}</a></span>
                         <img src="${awayteamLogo}" alt="" id="team2">
                     </div>
-        `
+        ` 
         conatiner.appendChild(game)
+        }
+    )
+
+}
+)
+
+matchMedia.addListener(e=>{
+    isMobile = e.matches;
+
+getMatches().then(data => { 
+        conatiner.innerHTML="";
+        data.forEach(match => {
+        console.log(match)
+        //Home team data
+        const homeTeam = match.home_team;
+        const hometeamId = homeTeam.id;
+        const hometeamLogo = homeTeam.logo;
+        const hometeamScore = match.stats.home_score;
+        let awayteamName;
+        let hometeamName;
+
+        //Away team data
+        const awayTeam = match.away_team;
+        const awayteamLogo = awayTeam.logo;
+        const awayteamScore = match.stats.away_score;
         
-}))
+        const awayteamId = awayTeam.id;
+
+        if(isMobile){
+            awayteamName = awayTeam.short_code;
+            hometeamName = homeTeam.short_code;
+        }else{
+            awayteamName = awayTeam.name;
+            hometeamName = homeTeam.name;
+        }
+        //matche info
+        const matchState = match.status;
+        const matchTime = match.match_start;
+
+        var game = document.createElement('div');
+        game.classList.add('matche')
+        game.innerHTML = `
+                    <div id="team1">
+                        <img id="team1" src="${hometeamLogo}" alt="">
+                        <span><a href="team.html">${hometeamName}</a></span>
+                    </div>
+                    <span id="time">21:00</span>     
+                    <div id="team2">
+                        <span><a href="team.html">${awayteamName}</a></span>
+                        <img src="${awayteamLogo}" alt="" id="team2">
+                    </div>
+        ` 
+        conatiner.appendChild(game)
+        }
+    )
+
+}
+)
+})
+
+
