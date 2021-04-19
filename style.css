@@ -182,13 +182,16 @@ body{
     }
 
     footer{
-        height: 10vh;
+        height: 10%;
         background-color: black;
         color: white;
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 1.5rem;
+        bottom: 0;
+        position: fixed;
+        width: 100%;
     }
 
     /* team page */ 
@@ -549,13 +552,15 @@ body{
 
     footer{
         height: 10vh;
-        width: 100%;
         background-color: black;
         color: white;
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 1.3rem;
+        bottom: 0;
+        position: fixed;
+        width: 100%;
     }
 
     /*  team page */
@@ -935,13 +940,16 @@ body{
     }
 
     footer{
-        width: 100%;
+        height: 10vh;
         background-color: black;
         color: white;
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 0.7rem;
+        bottom: 0;
+        position: fixed;
+        width: 100%;
     }
 
 
