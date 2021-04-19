@@ -55,7 +55,7 @@ getMatches().then(data => data.forEach(match => {
         
         const awayteamId = awayTeam.id;
 
-        if(window.matchMedia("(max-width: 640px)").matches){
+        if(window.matchMedia('(max-width:640px)').matches){
             awayteamName = awayTeam.short_code;
             hometeamName = homeTeam.short_code;
         }else{
